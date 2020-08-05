@@ -1,5 +1,8 @@
-// Este es el punto de entrada de tu aplicacion
+//Add CSS Styles 
+import './main.scss';
+//import routes from index.routes.js
+import {router} from './router/index.routes'
 
-import { myFunction } from './lib/index.js';
-
-myFunction();
+window.addEventListener('hashchange', () =>{ 
+ router(window.location.hash) //window.location gives you the URL
+})
