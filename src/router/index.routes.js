@@ -1,18 +1,21 @@
-import Home from '../views/home'
-
+import { pages } from '../controllers/index';
 
 /* ROUTES----*/
-export const router = (route) => {
-    switch (route) {
-        case '#/Posts': {
-            Home()
-        }
 
-        case '#/About-cats':
-            return console.log('About!');
-        case '#/Have-fun':
-            return console.log('Have fun!');
-        default:
-            return console.log('404!');
+const content = document.getElementById('root');
+export const router = (route) => {
+  content.innerHTML = '';
+  switch (route) {
+    case '#/': {
+      return content.appendChild(pages.home());
     }
+    case '#/Posts': {
+      return content.appendChild(pages.posts());
+    }
+    case '#/Login': {
+      return content.appendChild(pages.login());
+    }
+    default:
+      return content.appendChild(pages.notFound());
+  }
 };
