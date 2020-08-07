@@ -13,15 +13,16 @@ body {
 body {
   font-family: "Sniglet", cursive;
   background: $bg_primary;
-  color: #28262c;
+  color: $text-color;
   font-size: 20px;
 }
 header {
   width: 100%;
   padding: 1rem;
-  background: #28262c;
+  background: $primary-color;
   display: flex;
   flex-direction: column;
+  z-index: 300;
 }
 
 /*NAVIGATION BAR*/
@@ -32,13 +33,45 @@ header {
   align-items: center;
 }
 
-/*
-  .main-menu {
-    width: 100%;
-    max-width: 12rem;
-    background-color: #28262C;
-    position: absolute;
-    top: 100%;
-    margin-top: -0.5rem;
-    list-style: none;
-  }*/
+.Icon-menu {
+  display: flex;
+  color: white;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.main-menu {
+  text-decoration: none;
+  display: none;
+  width: 100%;
+  max-width: 12rem;
+  position: absolute;
+  top: 100%;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-top: -0.5rem;
+  list-style: none;
+}
+
+.main-menu::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 20px solid transparent;
+  position: absolute;
+  bottom: 100%;
+}
+
+.main-menu.active {
+  display: block;
+}
+
+.main-menu li {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  color: white;
+}
