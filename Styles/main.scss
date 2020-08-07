@@ -1,0 +1,44 @@
+//Aqui van todos los estilos del footer y main navigation
+* {
+  font-weight: lighter;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sniglet", cursive;
+  background: $bg_primary;
+  color: #28262c;
+  font-size: 20px;
+}
+header {
+  width: 100%;
+  padding: 1rem;
+  background: #28262c;
+  display: flex;
+  flex-direction: column;
+}
+
+/*NAVIGATION BAR*/
+
+.main-nav {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+  .main-menu {
+    width: 100%;
+    max-width: 12rem;
+    background-color: #28262C;
+    position: absolute;
+    top: 100%;
+    margin-top: -0.5rem;
+    list-style: none;
+  }*/
