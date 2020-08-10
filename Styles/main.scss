@@ -31,6 +31,8 @@ header {
   display: block;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  background-color: $primary-color;
 }
 
 .Icon-menu {
@@ -47,17 +49,17 @@ header {
   max-width: 12rem;
   position: absolute;
   top: 100%;
-  border-radius: 0 0.5rem 0.5rem 0.5rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  margin-top: -0.5rem;
+  margin-top: 1rem;
+  margin-left: -1rem;
   list-style: none;
+  background-color: $primary-color;
 }
 
 .main-menu::before {
   content: "";
   width: 0;
   height: 0;
-  border-right: 20px solid transparent;
   position: absolute;
   bottom: 100%;
 }
@@ -68,10 +70,37 @@ header {
 
 .main-menu li {
   width: 100%;
-  padding: 0.5rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .main-menu li a {
   text-decoration: none;
-  color: white;
+  color: $secondary-color;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 700px) {
+  #main-menu-button {
+    display: none;
+  }
+  .main-menu {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    max-width: none;
+    position: relative;
+    top: auto;
+    box-shadow: none;
+    margin: 0;
+  }
+  .main-menu li {
+    display: inline-block;
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+  .main-menu a {
+    padding: 0;
+    margin-left: 3em;
+  }
 }
