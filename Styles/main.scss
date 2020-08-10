@@ -2,6 +2,7 @@
 * {
   font-weight: lighter;
   box-sizing: border-box;
+  font-family: "Sniglet", cursive;
 }
 
 html,
@@ -11,7 +12,6 @@ body {
 }
 
 body {
-  font-family: "Sniglet", cursive;
   background: $bg_primary;
   color: $text-color;
   font-size: 20px;
@@ -102,5 +102,6 @@ header {
   .main-menu a {
     padding: 0;
     margin-left: 3em;
+    font-size: 1.5rem;
   }
 }

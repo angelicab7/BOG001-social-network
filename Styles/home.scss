@@ -9,10 +9,29 @@
 .about-container {
   margin: auto;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   background: $secondary-color;
-  font-size: 1rem;
+  font-size: 1.5rem;
   border-radius: 1rem;
   text-align: center;
-  
+  height:7rem;
+}
+.Start-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+}
+.button{
+  background: $primary-color;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border:none;
+  color:$secondary-color;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+#paw-icon{
+  font-size: 1.2rem;
+
 }

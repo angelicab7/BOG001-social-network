@@ -1,0 +1,31 @@
+.Login-section{
+    padding: 10rem;
+}
+h1{
+    font-size: 2rem;
+    color: #28262c;
+}
+.login-inputs{
+display:flex;
+flex-direction: column;
+width:20rem;
+}
+.input{
+    border-radius: 0 5px 5px 0;
+    padding: 0.3rem;
+    border:2px solid $primary-color;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+}
+.Login-btn{
+    background: $primary-color;
+    border-radius: 0.5rem;
+    color:$secondary-color;
+    font-size: 1rem;
+    height: 2.2rem;
+    width: 5rem;
+    border:none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
