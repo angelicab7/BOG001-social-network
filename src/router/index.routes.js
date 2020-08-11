@@ -15,6 +15,10 @@ export const router = (route) => {
     case '#/Login': {
       return content.appendChild(pages.login());
     }
+    case '#/Recover': {
+      return content.appendChild(pages.recover());
+    }
+
     default:
       return content.appendChild(pages.notFound());
   }
