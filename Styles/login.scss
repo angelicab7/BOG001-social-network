@@ -5,10 +5,6 @@
     margin: 0 auto;
 
 }
-h1{
-    font-size: 2rem;
-    color: #28262c;
-}
 .login-inputs{
 display:flex;
 flex-direction: column;
@@ -20,7 +16,7 @@ flex-direction: column;
     margin-bottom: 1.5rem;
     box-sizing: border-box;
 }
-.Login-btn{
+.button{
     background: $primary-color;
     border-radius: 0.5rem;
     color:$secondary-color;
@@ -32,3 +28,7 @@ flex-direction: column;
     padding: 0;
     box-sizing: border-box;
 }
+.login-inputs li a {
+    text-decoration: none;
+}
+/*Recover password styles*/

@@ -17,11 +17,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem;
+  @media (min-width: 700px){
+    padding: 6rem;
+  }
 }
-.button {
+.start-button {
+  margin: 1rem;
   background: $primary-color;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 1.5rem;
   border: none;
   color: $secondary-color;

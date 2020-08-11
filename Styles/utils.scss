@@ -1,3 +1,8 @@
+h1{
+  font-size: 2rem;
+  color: #28262c;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -23,4 +28,8 @@
     background-color: $grey;
     margin: 0 1rem;
   }
+}
+
+.margin-t-3{
+  margin-top: 7rem;
 }

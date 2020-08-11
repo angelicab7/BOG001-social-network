@@ -18,6 +18,12 @@ export const router = (route) => {
     case '#/Recover': {
       return content.appendChild(pages.recover());
     }
+    case '#/Adoption': {
+      return content.appendChild(pages.adoptme());
+    }
+    case '#/Register': {
+      return content.appendChild(pages.register());
+    }
 
     default:
       return content.appendChild(pages.notFound());
