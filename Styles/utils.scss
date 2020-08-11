@@ -5,3 +5,22 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+// Divider
+.divider {
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:before,
+  &:after {
+    content: "";
+    position: relative;
+    flex: 1 1 100%;
+    height: 1px;
+    background-color: $grey;
+    margin: 0 1rem;
+  }
+}

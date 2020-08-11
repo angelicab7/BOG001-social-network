@@ -1,5 +1,10 @@
+
 .Login-section{
-    padding: 10rem;
+    justify-content: center;
+    max-width: 20rem;
+    background-color: $secondary-color;
+    margin: 0 auto;
+
 }
 h1{
     font-size: 2rem;
@@ -8,7 +13,6 @@ h1{
 .login-inputs{
 display:flex;
 flex-direction: column;
-width:20rem;
 }
 .input{
     border-radius: 0 5px 5px 0;

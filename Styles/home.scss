@@ -1,20 +1,17 @@
-
 .logo {
   display: block;
   margin: auto;
-  width: 25rem;
   padding: 3rem;
+  max-width: 25rem;
 }
 
 .about-container {
   margin: auto;
   text-align: center;
   padding: 20px;
-  background: $secondary-color;
+  border: 2px solid $secondary-color;
   font-size: 1.5rem;
   border-radius: 1rem;
-  text-align: center;
-  height:7rem;
 }
 .Start-btn {
   display: flex;
@@ -22,16 +19,15 @@
   align-items: center;
   padding: 6rem;
 }
-.button{
+.button {
   background: $primary-color;
   padding: 1.5rem;
   border-radius: 1.5rem;
-  border:none;
-  color:$secondary-color;
+  border: none;
+  color: $secondary-color;
   font-size: 1.5rem;
   box-sizing: border-box;
 }
-#paw-icon{
+#paw-icon {
   font-size: 1.2rem;
-
 }
