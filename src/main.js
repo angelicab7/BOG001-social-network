@@ -21,6 +21,10 @@ const firebaseConfig = {
   measurementId: 'G-L4RSNDPKSM',
 };
 
+if (!window.location.hash) {
+  window.location.hash = '#/';
+}
+
 function init() {
   firebase.initializeApp(firebaseConfig);
   navBarController();
