@@ -4,6 +4,8 @@ import footer from '../views/footer.html';
 
 
 export default () => {
+  const content = document.getElementById('root');
+
   const divElement = document.createElement('div');
   divElement.innerHTML = `
     ${navBar}
@@ -11,5 +13,5 @@ export default () => {
     ${footer}
 `;
 
-  return divElement;
+  content.appendChild(divElement);
 };

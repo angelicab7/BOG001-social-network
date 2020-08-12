@@ -7,25 +7,25 @@ export const router = (route) => {
   content.innerHTML = '';
   switch (route) {
     case '#/': {
-      return content.appendChild(pages.home());
+      return pages.home();
     }
     case '#/Posts': {
-      return content.appendChild(pages.posts());
+      return pages.posts();
     }
     case '#/Login': {
-      return content.appendChild(pages.login());
+      return pages.login();
     }
     case '#/Recover': {
-      return content.appendChild(pages.recover());
+      return pages.recover();
     }
     case '#/Adoption': {
-      return content.appendChild(pages.adoptme());
+      return pages.adoptme();
     }
     case '#/Register': {
-      return content.appendChild(pages.register());
+      return pages.register();
     }
 
     default:
-      return content.appendChild(pages.notFound());
+      return pages.notFound();
   }
 };

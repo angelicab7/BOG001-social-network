@@ -1,23 +1,23 @@
-
-
 <section class="container margin-t-3">
     <div class='Login-section'>
         <h3>If you don't have an account, you can register here</h3>
-        <div class='login-inputs'>
-            <input type="nickname" class="input" id="nickname" name='password'  placeholder="Nickname">
-            <input type="email" class="input" id="email" name='email' placeholder="Email@example.com">
-            <input type="password" class="input" id="password" name='password'  placeholder="Password">
-        </div>
-    
-        <div class="register style">
-            <a href=''><button class="button" type="Login">Sign up</button></a>   
-        </div>
-    
+        <form id="signup-form">
+            <div class='login-inputs'>
+                <input type="nickname" class="input" id="username" name='password' placeholder="Username">
+                <input type="email" class="input" id="email" name='email' placeholder="Email@example.com">
+                <input type="password" class="input" id="password" name='password' placeholder="Password">
+            </div>
+            <div class="register style">
+                <a href=''><button class="button" type="submit">Sign up</button></a>
+            </div>
+        </form>
+
         <div class='option'>
             <h3 class="divider">or </h3>
         </div>
         <div class="login-inputs">
-            <input type="email" class="input" id="email" name='email' placeholder="You can sing with google">
+            <a href=''><button class="google-button" type="Login"><i class="fab fa-google"></i>Sign up with
+                    Google</button></a>
         </div>
     </div>
-    </section>
+</section>

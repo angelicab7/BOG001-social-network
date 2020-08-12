@@ -28,6 +28,14 @@ flex-direction: column;
     padding: 0;
     box-sizing: border-box;
 }
+.google-button{
+    border:2px solid $primary-color;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 0 5px 5px 0;
+    padding: 0.3rem;  
+}
+    
 .login-inputs li a {
     text-decoration: none;
 }

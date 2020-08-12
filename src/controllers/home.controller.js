@@ -3,12 +3,13 @@ import home from '../views/home.html';
 import footer from '../views/footer.html';
 
 export default () => {
+  const content = document.getElementById('root');
+
   const divElement = document.createElement('div');
   divElement.innerHTML = `
     ${navBar}
     ${home}
     ${footer}
 `;
-
-  return divElement;
+ content.appendChild(divElement);
 };
