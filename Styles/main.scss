@@ -113,3 +113,19 @@ img {
     flex: 1;
   }
 }
+/*FOOTER STYLES*/
+.footer-box{
+  padding: 0.5rem;
+  background: $primary-color;
+  display: flex;
+  justify-content:center;
+}
+.Logout-icon{
+  margin-top: auto;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+  transform: rotate(180deg);
+}
+.text-color{
+  color: $secondary-color;
+}

@@ -1,47 +1,45 @@
+.Login-section {
+  justify-content: center;
+  max-width: 30rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  border-radius: 5px;
+  padding: 0.3rem;
+  border: 2px solid $primary-color;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+.button {
+  background: $primary-color;
+  border-radius: 0.5rem;
+  color: $secondary-color;
+  font-size: 1rem;
+  height: 2.2rem;
+  width: 5rem;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.google-button {
+  border: 2px solid $primary-color;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.3rem;
+}
 
-.Login-section{
-    justify-content: center;
-    max-width: 20rem;
-    margin: 0 auto;
-
-}
-.login-inputs{
-display:flex;
-flex-direction: column;
-}
-.input{
-    border-radius: 5px;
-    padding: 0.3rem;
-    border:2px solid $primary-color;
-    margin-bottom: 1.5rem;
-    box-sizing: border-box;
-}
-.button{
-    background: $primary-color;
-    border-radius: 0.5rem;
-    color:$secondary-color;
-    font-size: 1rem;
-    height: 2.2rem;
-    width: 5rem;
-    border:none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.google-button{
-    border:2px solid $primary-color;
-    background-color:#d5d4fa;
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 0.3rem;  
-}
-    
 .login-inputs li a {
-    text-decoration: none;
+  text-decoration: none;
 }
-.button span{
-    color:$primary-color;
-  }
+.button span {
+  color: $primary-color;
+}
 
-  
 /*Recover password styles*/

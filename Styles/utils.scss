@@ -1,4 +1,4 @@
-h1{
+h1 {
   font-size: 2rem;
   color: #28262c;
 }
@@ -30,6 +30,22 @@ h1{
   }
 }
 
-.margin-t-3{
+.margin-t-3 {
   margin-top: 7rem;
+}
+
+.background {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(247, 241, 241, 0.7),
+      rgba(247, 241, 241, 0.7)
+    ),
+    url("/src/assets/img/cat-background.jpg");
+}
+
+.background.full-screen {
+  min-height: 100vh;
+  display: flex;
 }
