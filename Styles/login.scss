@@ -29,12 +29,15 @@
 }
 .google-button {
   border: 2px solid $primary-color;
-  background-color: white;
+  background-color: $primary-color;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 0.3rem;
 }
-
+#icon{
+  color:$secondary-color;
+  font-size:2rem;
+}
 .login-inputs li a {
   text-decoration: none;
 }
