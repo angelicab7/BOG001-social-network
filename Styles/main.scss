@@ -101,13 +101,15 @@ img {
     margin: 0;
   }
   .main-menu li {
-    display: inline-block;
+    display: flex;
     border: none;
     padding: 0.5rem 1rem;
   }
   .main-menu a {
     padding: 0;
-    margin-left: 3em;
+    width: 100%;
+    text-align: center;
     font-size: 1.5rem;
+    flex: 1;
   }
 }

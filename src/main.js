@@ -4,6 +4,7 @@ import '../Styles/index.scss';
 import * as firebase from 'firebase/app';
 import { router } from './router/index.routes';
 import { navBarController } from './controllers/navbar.constroller';
+import { authState } from './model/authState';
 // Firebase App (the core Firebase SDK) is always required and must be listed first
 
 // Add the Firebase products that you want to use
@@ -27,6 +28,7 @@ if (!window.location.hash) {
 
 function init() {
   firebase.initializeApp(firebaseConfig);
+  authState();
   navBarController();
 }
 
