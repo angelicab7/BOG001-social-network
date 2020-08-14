@@ -47,6 +47,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "firebase": "^7.17.2"
+    "firebase": "^7.17.2",
+    "sweetalert2": "^9.17.1"
   }
 }

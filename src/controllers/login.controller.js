@@ -1,4 +1,5 @@
 import * as firebase from 'firebase/app';
+import Swal from 'sweetalert2';
 import loginView from '../views/login.html';
 import navBar from '../views/navigation-bar.html';
 import footer from '../views/footer.html';
@@ -6,10 +7,20 @@ import footer from '../views/footer.html';
 async function signInWithEmailAndPassword() {
   const email = document.querySelector('#email').value;
   const password = document.querySelector('#password').value;
+  Swal.fire({
+    title: 'Login In, please wait...',
+    onBeforeOpen: () => {
+      Swal.showLoading();
+    },
+  });
+
   try {
     await firebase.auth().signInWithEmailAndPassword(email, password);
+    Swal.close();
+    window.location.hash = '#/Posts';
   } catch (error) {
     console.error(error);
+    Swal.close();
   }
 }
 

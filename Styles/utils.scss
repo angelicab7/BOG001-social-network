@@ -29,6 +29,16 @@ h1 {
     margin: 0 1rem;
   }
 }
+.divider-posts{
+  position: relative;
+  flex: 1 1 100%;
+  height: 2px;
+  background-color: $primary-color;
+  margin: 0 1rem;
+ 
+
+
+}
 
 .margin-t-3 {
   margin-top: 2rem;

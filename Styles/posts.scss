@@ -1,10 +1,48 @@
 /*POSTS AND ADOPTION SECTION*/
-.container-info{
+* .container-info{
     font-size: 1rem;
-    text-align: justify;
     border: 2px solid $primary-color;
     border-radius: 1rem;
+    text-align: justify;
 }
-.padding{
-    padding: 2rem;
+.create-post{
+    border: 2px solid $primary-color;
+    text-align: center;
+    padding:1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.profile{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+.profPic{
+ border-radius: 8rem;
+ height: 2.5rem;
+ width: 2.5rem;
+ margin:1rem
+}
+textarea{
+    margin-bottom: 2rem;
+    height: 5rem;
+    width: 16rem;
+    @media (min-width: 700px){
+        height: 15rem;
+        width: 40rem;  
+    }
+
+}
+.posts-button{
+  background: $primary-color;
+  border-radius: 0.5rem;
+  color: $secondary-color;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 7rem;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
