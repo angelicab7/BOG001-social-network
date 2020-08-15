@@ -36,4 +36,5 @@ router(window.location.hash);
 init();
 window.addEventListener('hashchange', () => {
   router(window.location.hash); // window.location gives you the URL
+  navBarController();
 });

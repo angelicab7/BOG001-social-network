@@ -29,6 +29,11 @@ async function createUserWithEmailAndPassword() {
     window.location.hash = '#/Login';
   } catch (error) {
     console.error(error);
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: error.message || 'Something went wrong',
+    });
   }
 }
 

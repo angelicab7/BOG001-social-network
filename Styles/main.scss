@@ -80,9 +80,16 @@ img {
   padding: 2rem 1.5rem;
 }
 
-.main-menu li a {
-  text-decoration: none;
-  color: $secondary-color;
+.main-menu li {
+  a, button {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+
+  button {
+    background: none;
+    border: none;
+  }
 }
 
 /*MEDIA QUERIES*/
@@ -106,12 +113,14 @@ img {
     border: none;
     padding: 0.5rem 1rem;
   }
-  .main-menu a {
-    padding: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.5rem;
-    flex: 1;
+  .main-menu {
+    a, button {
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      flex: 1;
+    }
   }
 }
 /*FOOTER STYLES*/

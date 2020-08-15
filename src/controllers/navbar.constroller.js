@@ -12,8 +12,7 @@ export function navBarController() {
   /* Logout */
 
   const logout = document.querySelector('#Logout');
-  logout.addEventListener('click', (e) => {
-    e.preventDefault();
+  logout.addEventListener('click', () => {
     firebase.auth().signOut().then(() => {
       console.log('sign out');
     });
