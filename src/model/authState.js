@@ -8,7 +8,7 @@ export function redirectToLogin() {
 }
 
 export function redirectIfNotAuthenticated() {
-  const isProtectedRoute = ['#/Posts', '#/Adoption'].includes(window.location.hash);
+  const isProtectedRoute = ['#/Posts', '#/Adoption', '#/createPost'].includes(window.location.hash);
 
   if (isProtectedRoute && !isAuthenticated && !isLoadingAuthState) {
     redirectToLogin();

@@ -1,4 +1,4 @@
-/*POSTS AND ADOPTION SECTION*/
+/*POSTS AND CREATE POSTS SECTION*/
 * .container-info{
     font-size: 1rem;
     border: 2px solid $primary-color;
@@ -16,7 +16,8 @@
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    padding: 1rem;
+    padding: 0.1rem;
+
 }
 .profPic{
  border-radius: 8rem;
@@ -45,4 +46,32 @@ textarea{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.shareYourKitten{
+    margin-top: 1rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    background-color:$primary-color;
+    color: $secondary-color;
+    font-size: 1rem;
+    border-radius: 30rem;
+    margin: 1rem;
+
+}
+.interaccion-section{
+  color:$primary-color;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.interaccion-section span{
+    margin:1rem;
+}
+.close-button{
+    display: flex;
+    justify-content: flex-end;
+    color: $primary-color;
 }

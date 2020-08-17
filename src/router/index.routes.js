@@ -12,6 +12,9 @@ export const router = (route) => {
     case '#/Posts': {
       return pages.posts();
     }
+    case '#/createPost': {
+      return pages.createPost();
+    }
     case '#/Login': {
       return pages.login();
     }

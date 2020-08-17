@@ -5,6 +5,7 @@ import login from './login.controller';
 import recover from './recover.controller';
 import adoptme from './adoptme.controller';
 import register from './register.controller';
+import createPost from './createPost.controller';
 
 const pages = {
   home,
@@ -14,5 +15,6 @@ const pages = {
   recover,
   adoptme,
   register,
+  createPost,
 };
 export { pages };
