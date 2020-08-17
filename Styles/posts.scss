@@ -5,6 +5,11 @@
     border-radius: 1rem;
     text-align: justify;
 }
+
+.container.container-posts {
+    max-width: 600px;
+}
+
 .create-post{
     border: 2px solid $primary-color;
     text-align: center;
@@ -25,13 +30,13 @@
  width: 2.5rem;
  margin:1rem
 }
-textarea{
+.t-s-a-styles{
     margin-bottom: 2rem;
     height: 5rem;
     width: 16rem;
     @media (min-width: 700px){
         height: 15rem;
-        width: 40rem;  
+        width: 30rem;  
     }
 
 }
@@ -47,19 +52,21 @@ textarea{
   padding: 0;
   box-sizing: border-box;
 }
-.shareYourKitten{
+.edit-icon{
+    text-decoration: none;
+    border-radius: 30rem;
+    font-size: 1rem;
     margin-top: 1rem;
     position: fixed;
     bottom: 0;
     right: 0;
     padding: 1rem;
-    background-color:$primary-color;
-    color: $secondary-color;
-    font-size: 1rem;
-    border-radius: 30rem;
+    border: 2px solid $primary-color;
+    background-color: $grey;
     margin: 1rem;
-
+    color:$primary-color;
 }
+
 .interaccion-section{
   color:$primary-color;
   display: flex;
