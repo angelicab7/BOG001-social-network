@@ -31,10 +31,11 @@
 }
 .t-s-a-styles {
   margin-bottom: 2rem;
-  height: 5rem;
-  width: 16rem;
+  height: 8rem;
+  width: 18rem;
+  outline: none;
   @media (min-width: 700px) {
-    height: 15rem;
+    height: 20rem;
     width: 30rem;
   }
 }
@@ -79,7 +80,7 @@
   display: flex;
   justify-content: flex-end;
   color: $primary-color;
-  text-decoration: none;
+  
 }
 
 [type="file"] {
