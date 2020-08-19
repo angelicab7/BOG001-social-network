@@ -1,6 +1,7 @@
 <section class='background full-screen'>
     <div class='container container-posts'>
-        <div class='create-post margin-t-3 margin-b-3'>
+        <form class='create-post margin-t-3 margin-b-3' id='create-post'>
+
             <div class="close-button">
                 <a href="#/Posts"><i class="far fa-times-circle"></i></a> </div>
 
@@ -12,7 +13,7 @@
                 <img src="/src/assets/img/profile-pic-example.png" alt="profile_image" class="profPic" />
                 <h5> User name</h5>
             </div>
-            <textarea class='t-s-a-styles ' placeholder="Share the cuteness!">
+            <textarea class='t-s-a-styles ' id='text-area' placeholder="Share the cuteness!">
             </textarea>
             <div class='margin-b-3'>
                 <input class="file-input" type="file" id="image" placeholder="Img" accept="image/*">
@@ -21,8 +22,8 @@
 
 
             <div class="Login style">
-                <a href='#/Posts'><button class="posts-button" type="submit">Post a Kitty</button></a>
+                <button class="posts-button" type="submit">Post a Kitty</button>
             </div>
-        </div>
+        </form>
     </div>
 </section>

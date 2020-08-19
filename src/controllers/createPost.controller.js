@@ -16,4 +16,11 @@ export default () => {
     
   `;
   content.appendChild(divElement);
+
+  const createPostsForm = document.querySelector('#create-post');
+  createPostsForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // cancelar evento de reinicio del formulario
+    const textArea = document.querySelector('#text-area').value;
+    console.log(textArea);
+  });
 };
