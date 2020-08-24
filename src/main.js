@@ -10,6 +10,7 @@ import { authState } from './model/authState';
 // Add the Firebase products that you want to use
 import 'firebase/auth';
 import 'firebase/firestore';
+import 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDjekAtuLSwIFPBrX41c7o-cKp_qNDFx7o',
@@ -26,8 +27,9 @@ if (!window.location.hash) {
   window.location.hash = '#/';
 }
 
+firebase.initializeApp(firebaseConfig);
+
 function init() {
-  firebase.initializeApp(firebaseConfig);
   authState();
   navBarController();
 }
