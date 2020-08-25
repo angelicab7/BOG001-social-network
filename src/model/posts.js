@@ -30,7 +30,7 @@ export async function insertPostIntoDatabase(message, imageURL) {
 /**
  * @returns {Promise<firebase.firestore.QuerySnapshot<firebase.firestore.DocumentData>>} - Returns the list with all the posts in the database
  */
-export async function getPosts() {
+export function getPosts() {
   const db = firebase.firestore();
   return new Promise((resolve, reject) => {
     db.collection('posts').get().then((querySnapshot) => {
@@ -38,5 +38,17 @@ export async function getPosts() {
     }).catch((error) => {
       reject(error);
     });
+  });
+}
+
+export function deletePosts(postId) {
+  const db = firebase.firestore();
+  return new Promise((resolve, reject) => {
+    db.collection('posts').doc(postId).delete().then(() => {
+      resolve();
+    })
+      .catch((error) => {
+        reject(error);
+      });
   });
 }

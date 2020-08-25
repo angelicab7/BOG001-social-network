@@ -1,8 +1,45 @@
+import Swal from 'sweetalert2';
+import * as firebase from 'firebase/app';
 import navBar from '../views/navigation-bar.html';
 import postsHTML from '../views/posts.html';
 import footer from '../views/footer.html';
 import { redirectIfNotAuthenticated } from '../model/authState';
-import { getPosts } from '../model/posts';
+import { getPosts, deletePosts } from '../model/posts';
+
+async function onClickDelete(postId) {
+  const result = await Swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#8A89C0',
+    cancelButtonColor: '#fac8cd',
+    confirmButtonText: 'Yes, delete it!',
+  });
+
+  if (result.value) {
+    Swal.fire({
+      title: 'Deleting post, please wait...',
+      onBeforeOpen: () => {
+        Swal.showLoading();
+      },
+    });
+    try {
+      await deletePosts(postId);
+      Swal.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success',
+      );
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'There was an unexpected error, please try again',
+      });
+    }
+  }
+}
 
 function postTemplate(userId, userName, userPicture, postMessage, postImage, postId) {
   const container = document.createElement('div');
@@ -24,11 +61,28 @@ function postTemplate(userId, userName, userPicture, postMessage, postImage, pos
             <div class='interaction-section'>
                 <i class="fas fa-thumbs-up"><span>Like</span></i>
                 <i class="fas fa-comments"><span>Comment</span></i>
-                <i class="fas fa-ellipsis-v"></i>
+                ${firebase.auth().currentUser.uid === userId ? '<i class="fas fa-edit edit-post"></i>' : ''}
+                ${firebase.auth().currentUser.uid === userId ? '<i class="fas fa-trash-alt delete-post"></i>' : ''}
             </div>
   `;
 
   container.innerHTML = template;
+
+  // EDIT AND DELETE POSTS
+
+  const deletePostButton = container.querySelector('.delete-post');
+  if (deletePostButton) {
+    deletePostButton.addEventListener('click', () => {
+      onClickDelete(postId);
+    });
+  }
+
+  const editPostButton = container.querySelector('.edit-post');
+  if (editPostButton) {
+    editPostButton.addEventListener('click', () => {
+      console.log('Edit post');
+    });
+  }
 
   return container;
 }
