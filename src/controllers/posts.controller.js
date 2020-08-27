@@ -4,7 +4,7 @@ import navBar from '../views/navigation-bar.html';
 import postsHTML from '../views/posts.html';
 import footer from '../views/footer.html';
 import { redirectIfNotAuthenticated } from '../model/authState';
-import { getPosts, deletePosts } from '../model/posts';
+import { getPosts, deletePosts, likePost } from '../model/posts';
 
 async function onClickDelete(postId) {
   const result = await Swal.fire({
@@ -41,11 +41,15 @@ async function onClickDelete(postId) {
   }
 }
 
-function postTemplate(userId, userName, userPicture, postMessage, postImage, postId) {
+function postTemplate(userId, userName, userPicture, postMessage, postImage, postId, likes) {
+  const currentUserId = firebase.auth().currentUser.uid;
   const container = document.createElement('div');
   container.className = 'create-post margin-t-3 margin-b-3';
   container.dataset.user = userId;
   container.dataset.id = postId;
+
+  // se evalua si el usuario le dio like y se encuentra registrado en la base de datos
+  let userHasLikedThePost = likes.some((uid) => uid === currentUserId);
 
   const template = `
             <div class='profile'>
@@ -59,10 +63,13 @@ function postTemplate(userId, userName, userPicture, postMessage, postImage, pos
             </div>
             <h1 class='divider-posts'></h1>
             <div class='interaction-section'>
-                <i class="fas fa-thumbs-up"><span>Like</span></i>
+                <i class="fas fa-thumbs-up like-button ${userHasLikedThePost ? 'liked' : ''}">
+                  <span>Like</span>
+                  <span class="likes-count">${likes.length}</span>
+                </i>
                 <i class="fas fa-comments"><span>Comment</span></i>
-                ${firebase.auth().currentUser.uid === userId ? '<i class="fas fa-edit edit-post"></i>' : ''}
-                ${firebase.auth().currentUser.uid === userId ? '<i class="fas fa-trash-alt delete-post"></i>' : ''}
+                ${currentUserId === userId ? '<i class="fas fa-edit edit-post"></i>' : ''}
+                ${currentUserId === userId ? '<i class="fas fa-trash-alt delete-post"></i>' : ''}
             </div>
   `;
 
@@ -83,10 +90,25 @@ function postTemplate(userId, userName, userPicture, postMessage, postImage, pos
       console.log('Edit post');
     });
   }
+  // LIKES BUTTON
+
+  const likeButton = container.querySelector('.like-button');
+  likeButton.addEventListener('click', () => {
+    likePost(currentUserId, postId, userHasLikedThePost);
+    const likesCount = container.querySelector('.likes-count');
+    likeButton.classList.toggle('liked');
+    if (userHasLikedThePost) {
+      likesCount.textContent = parseInt(likesCount.textContent, 10) - 1;
+      userHasLikedThePost = false;
+    } else {
+      likesCount.textContent = parseInt(likesCount.textContent, 10) + 1;
+      userHasLikedThePost = true;
+    }
+  });
 
   return container;
 }
-
+// AUTHENTICATION
 export default async () => {
   redirectIfNotAuthenticated();
 
@@ -107,11 +129,13 @@ export default async () => {
 
   posts.forEach((post) => {
     const {
-      uid, userName, userPicture, imageURL, message,
+      uid, userName, userPicture, imageURL, message, likes,
     } = post.data();
     const postId = post.id;
 
-    postsFragment.appendChild(postTemplate(uid, userName, userPicture, message, imageURL, postId));
+    postsFragment.appendChild(
+      postTemplate(uid, userName, userPicture, message, imageURL, postId, likes),
+    );
   });
 
   postsContainer.innerHTML = '';

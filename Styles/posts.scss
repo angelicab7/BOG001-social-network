@@ -67,10 +67,22 @@
   color: $primary-color;
 }
 
+.like-button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.like-button.liked {
+  color: white;
+  background-color: $primary-color;
+}
+
 .interaction-section {
   color: $primary-color;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-top: 1rem;
   font-size: 1rem;
 }

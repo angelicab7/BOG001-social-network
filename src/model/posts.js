@@ -18,6 +18,7 @@ export async function insertPostIntoDatabase(message, imageURL) {
       userPicture: userData.picture,
       message,
       imageURL,
+      likes: [],
     }).then(() => {
       resolve();
     })
@@ -51,4 +52,18 @@ export function deletePosts(postId) {
         reject(error);
       });
   });
+}
+// LIKES
+export async function likePost(currentUserId, postId, userHasLikedThePost) {
+  const db = firebase.firestore();
+  const postRef = db.collection('posts').doc(postId);
+  if (userHasLikedThePost) {
+    await postRef.update({
+      likes: firebase.firestore.FieldValue.arrayRemove(currentUserId),
+    });
+  } else {
+    await postRef.update({
+      likes: firebase.firestore.FieldValue.arrayUnion(currentUserId),
+    });
+  }
 }

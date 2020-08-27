@@ -3,7 +3,7 @@ import '../Styles/index.scss';
 // import routes from index.routes.js
 import * as firebase from 'firebase/app';
 import { router } from './router/index.routes';
-import { navBarController } from './controllers/navbar.constroller';
+import { navBarController } from './controllers/navbar.controller';
 import { authState } from './model/authState';
 // Firebase App (the core Firebase SDK) is always required and must be listed first
 
