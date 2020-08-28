@@ -42,8 +42,8 @@ Crear un sitio web agradable, que se adapte a todas las pantallas (Responsive) y
 **************************************************************
 *Versión Desktop*
 
-<img src="src/assets/img/Prot-alta-fid-desktop1.PNG" width=200>
-<img src="src/assets/img/Prot-alta-fid-desktop2.PNG" width=120 height=120>
+<img src="src/assets/img/Prot-alta-fid-desktop1.PNG" width=350>
+<img src="src/assets/img/Prot-alta-fid-desktop2.PNG" width=300 height=350>
 
 *Versión Movil*
 
