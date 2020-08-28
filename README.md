@@ -1,5 +1,5 @@
 ## SMELLY CAT 💜
-<img src="src/assets/img/SmellyCatLogo.svg">
+<img src="src/assets/img/SmellyCatLogoPink.png">
 
 
 
@@ -35,8 +35,8 @@ Crear un sitio web agradable, que se adapte a todas las pantallas (Responsive) y
 *Prototipos baja fidelidad*
 ***************************************************************
 
-<img src="src/assets/img/Prototipo-baja-fidelidad1.jpg" width=200>
-<img src="src/assets/img/Prototipo-baja-fidelidad2.jpg" width=200>
+<img src="src/assets/img/Prototipo-baja-fidelidad1.jpg" width=300>
+<img src="src/assets/img/Prototipo-baja-fidelidad2.jpg" width=300>
 
 *Prototipos alta fidelidad*
 **************************************************************
