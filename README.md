@@ -35,15 +35,15 @@ Crear un sitio web agradable, que se adapte a todas las pantallas (Responsive) y
 *Prototipos baja fidelidad*
 ***************************************************************
 
-<img src="src/assets/img/Prototipo-baja-fidelidad1.jpg" width=300>
-<img src="src/assets/img/Prototipo-baja-fidelidad2.jpg" width=300>
+<img src="src/assets/img/Prototipo-baja-fidelidad1.jpg" width=400>
+<img src="src/assets/img/Prototipo-baja-fidelidad2.jpg" width=400>
 
 *Prototipos alta fidelidad*
 **************************************************************
 *Versión Desktop*
 
-<img src="src/assets/img/Prot-alta-fid-desktop1.PNG" width=350>
-<img src="src/assets/img/Prot-alta-fid-desktop2.PNG" width=300 height=350>
+<img src="src/assets/img/Prot-alta-fid-desktop1.PNG" width=500>
+<img src="src/assets/img/Prot-alta-fid-desktop2.PNG" width=350 height=450>
 
 *Versión Movil*
 
