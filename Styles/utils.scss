@@ -1,0 +1,71 @@
+h1 {
+  font-size: 2rem;
+  color: #28262c;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+// Divider
+.divider {
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:before,
+  &:after {
+    content: "";
+    position: relative;
+    flex: 1 1 100%;
+    height: 1px;
+    background-color: $grey;
+    margin: 0 1rem;
+  }
+}
+.divider-posts{
+  position: relative;
+  flex: 1 1 100%;
+  height: 2px;
+  background-color: $primary-color;
+  margin: 0 1rem;
+}
+
+.margin-t-3 {
+  margin-top: 2rem;
+}
+.margin-b-3{
+  margin-bottom: 3rem;
+}
+
+.background {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(247, 241, 241, 0.7),
+      rgba(247, 241, 241, 0.7)
+    ),
+    url("/src/assets/img/cat-background.jpg");
+}
+
+.background.full-screen {
+  min-height: 100vh;
+  display: flex;
+}
+/*ADOPTION STYLES*/
+
+.adopt-pic{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 1rem;
+}
+.terms{
+  justify-content: left;
+}

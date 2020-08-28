@@ -1,0 +1,124 @@
+/*POSTS AND CREATE POSTS SECTION*/
+* .container-info {
+  font-size: 1rem;
+  border: 2px solid $primary-color;
+  border-radius: 1rem;
+  text-align: justify;
+}
+
+.container.container-posts {
+  max-width: 600px;
+}
+
+.create-post {
+  border: 2px solid $primary-color;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+  
+}
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.1rem;
+}
+.profPic {
+  border-radius: 8rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 1rem;
+}
+.t-s-a-styles {
+  margin-bottom: 2rem;
+  height: 8rem;
+  width: 18rem;
+  outline: none;
+  @media (min-width: 700px) {
+    height: 10rem;
+    width: 30rem;
+  }
+}
+.posts-button {
+  background: $primary-color;
+  border-radius: 0.5rem;
+  color: $secondary-color;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 7rem;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.edit-icon {
+  text-decoration: none;
+  border-radius: 30rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  border: 2px solid $primary-color;
+  background-color: $grey;
+  margin: 1rem;
+  color: $primary-color;
+}
+
+.like-button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.like-button.liked {
+  color: white;
+  background-color: $primary-color;
+}
+
+.interaction-section {
+  color: $primary-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.interaction-section span {
+  margin: 1rem;
+}
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+  color: $primary-color;
+  
+}
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+  display:block;
+}
+
+[type="file"] + label {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  background: $primary-color;
+  border-radius: 0.5rem;
+  color: $secondary-color;
+  font-size: 1rem;
+  border: none;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 10rem;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
