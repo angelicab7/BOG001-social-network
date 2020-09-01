@@ -12,5 +12,5 @@ export default () => {
     ${footer}
   
 `;
- content.appendChild(divElement);
+  content.appendChild(divElement);
 };

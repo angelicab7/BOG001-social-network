@@ -1,5 +1,5 @@
 import Swal from 'sweetalert2';
-import * as firebase from 'firebase/app';
+import * as firebase from 'firebase';
 import navBar from '../views/navigation-bar.html';
 import postsHTML from '../views/posts.html';
 import footer from '../views/footer.html';
@@ -31,6 +31,7 @@ async function onClickDelete(postId) {
         'Your file has been deleted.',
         'success',
       );
+      window.location.reload();
     } catch (error) {
       Swal.fire({
         icon: 'error',
@@ -41,7 +42,7 @@ async function onClickDelete(postId) {
   }
 }
 
-function postTemplate(userId, userName, userPicture, postMessage, postImage, postId, likes) {
+export function postTemplate(userId, userName, userPicture, postMessage, postImage, postId, likes) {
   const currentUserId = firebase.auth().currentUser.uid;
   const container = document.createElement('div');
   container.className = 'create-post margin-t-3 margin-b-3';

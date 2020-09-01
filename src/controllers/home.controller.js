@@ -11,5 +11,5 @@ export default () => {
     ${home}
     ${footer}
 `;
- content.appendChild(divElement);
+  content.appendChild(divElement);
 };

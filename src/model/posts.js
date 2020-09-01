@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import * as firebase from 'firebase/app';
+import * as firebase from 'firebase';
 
 /**
  * Insert a post into the database
