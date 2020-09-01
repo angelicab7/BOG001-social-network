@@ -1,0 +1,144 @@
+//Aqui van todos los estilos del footer y main navigation
+* {
+  font-weight: lighter;
+  box-sizing: border-box;
+  font-family: "Sniglet", cursive;
+  text-align: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $bg_primary;
+  color: $text-color;
+  font-size: 20px;
+}
+header {
+  width: 100%;
+  padding: 1rem;
+  background: $primary-color;
+  display: flex;
+  flex-direction: column;
+  z-index: 300;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*NAVIGATION BAR*/
+
+.main-nav {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: $primary-color;
+}
+
+.Icon-menu {
+  display: flex;
+  color: white;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.main-menu {
+  text-decoration: none;
+  display: none;
+  width: 100%;
+  max-width: 12rem;
+  position: absolute;
+  top: 100%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+  margin-left: -1rem;
+  list-style: none;
+  background-color: $primary-color;
+  padding: 0;
+}
+
+.main-menu::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 100%;
+}
+
+.main-menu.active {
+  display: block;
+}
+
+.main-menu li {
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.main-menu li {
+  a, button {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+
+  button {
+    background: none;
+    border: none;
+  }
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 700px) {
+  #main-menu-button {
+    display: none;
+  }
+  .main-menu {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    max-width: none;
+    position: relative;
+    top: auto;
+    box-shadow: none;
+    margin: 0;
+  }
+  .main-menu li {
+    display: flex;
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+  .main-menu {
+    a, button {
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      flex: 1;
+    }
+  }
+}
+/*FOOTER STYLES*/
+.footer-box{
+  padding: 0.5rem;
+  background: $primary-color;
+  display: flex;
+  justify-content:center;
+}
+.Logout-icon{
+  margin-top: auto;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+  transform: rotate(180deg);
+}
+.text-color{
+  color: $secondary-color;
+}
+.logo {
+  max-width: 10rem;
+}

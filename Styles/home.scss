@@ -1,0 +1,39 @@
+.logo {
+  display: block;
+  margin: auto;
+  padding: 3rem;
+  max-width: 25rem;
+}
+
+.about-container {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid $primary-color;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+}
+.Start-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 700px){
+    padding: 6rem;
+  }
+}
+.start-button {
+  margin: 1rem;
+  background: $primary-color;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border: none;
+  color: $secondary-color;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+#icon-paw {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  color: $primary-color;
+}
+
