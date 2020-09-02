@@ -98,7 +98,7 @@ export function postTemplate(userId, userName, userPicture, postMessage, postIma
                   <span>Like</span>
                   <span class="likes-count">${likes.length}</span>
                 </i>
-                <i class="fas fa-comments"><span>Comment</span></i>
+                <i class="fas fa-comments"><span></span></i>
                 ${currentUserId === userId ? '<div class="post-edit-actions"><i class="fas fa-edit edit-post"></i></div>' : ''}
                 ${currentUserId === userId ? '<i class="fas fa-trash-alt delete-post"></i>' : ''}
             </div>
@@ -121,7 +121,7 @@ export function postTemplate(userId, userName, userPicture, postMessage, postIma
       // Creamos un nuevo elemento de tipo botón
       const publishButton = document.createElement('button');
       // A este nuevo botón le añadimos una clase para añadir estilos
-      publishButton.className = 'save-changes-button';
+      publishButton.className = 'save-changes-button posts-button';
       // A este nuevo botón le agregamos un texto
       publishButton.textContent = 'Publish';
 

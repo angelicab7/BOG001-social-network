@@ -19,7 +19,8 @@
     "jest": "jest --coverage",
     "start": "webpack-dev-server",
     "build": "webpack --mode production",
-    "deploy": "rm -rf dist && npm run build && gh-pages -d dist"
+    "deploy:github": "rm -rf dist && npm run build && gh-pages -d dist",
+    "deploy:firebase": "rm -rf dist && npm run build && firebase deploy"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
