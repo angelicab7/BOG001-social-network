@@ -16,7 +16,6 @@
   padding: 1rem;
   font-size: 1.5rem;
   width: 100%;
-  
 }
 .profile {
   display: flex;
@@ -93,14 +92,22 @@
   display: flex;
   justify-content: flex-end;
   color: $primary-color;
-  
+}
+
+.post-message {
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  &.editable {
+    background-color: white;
+  }
 }
 
 [type="file"] {
   height: 0;
   overflow: hidden;
   width: 0;
-  display:block;
+  display: block;
 }
 
 [type="file"] + label {

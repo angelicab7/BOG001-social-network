@@ -73,7 +73,7 @@ Crear un sitio web agradable, que se adapte a todas las pantallas (Responsive) y
 
 *¿Cómo ejecutar este proyecto?*
 
-Solo necesitas un navegador y dar click en el siguiente link: (https://angelicab7.github.io/BOG001-social-network/)
+Solo necesitas un navegador y dar click en el siguiente link: https://smelly-cat-1e196.firebaseapp.com/#/
 
 *****************
 ## OBJETIVOS DE APRENDIZAJE
@@ -89,7 +89,7 @@ Solo necesitas un navegador y dar click en el siguiente link: (https://angelicab
 ### DOM y Web APIs
 
 * [x] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
+* [X] Manejo de eventos del DOM.
 * [x] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 * [ ] [History API.](https://developer.mozilla.org/es/docs/DOM/Manipulando_el_historial_del_navegador)
@@ -104,15 +104,15 @@ Solo necesitas un navegador y dar click en el siguiente link: (https://angelicab
 * [x] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 | [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
 * [x] Diferenciar entre expression y statements.
-* [ ] Diferenciar entre tipos de datos primitivos y no primitivos.
+* [X] Diferenciar entre tipos de datos primitivos y no primitivos.
 * [x] [Uso de callbacks.](https://developer.mozilla.org/es/docs/Glossary/Callback_function)
 * [x] [Consumo de Promesas.](https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises)
 
 ### Testing
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
-* [ ] [Testeo asíncrono.](https://jestjs.io/docs/es-ES/asynchronous)
-* [ ] [Uso de librerias de Mock.](https://jestjs.io/docs/es-ES/manual-mocks)
+* [X] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+* [X] [Testeo asíncrono.](https://jestjs.io/docs/es-ES/asynchronous)
+* [X] [Uso de librerias de Mock.](https://jestjs.io/docs/es-ES/manual-mocks)
 
 ### Estructura del código y guía de estilo
 
@@ -125,7 +125,7 @@ Solo necesitas un navegador y dar click en el siguiente link: (https://angelicab
 * [x] Uso de comandos de git (add | commit | pull | status | push)
 * [x] Manejo de repositorios de GitHub (clone | fork | gh-pages)
 * [x] Colaboración en Github (branches | pull requests | |tags)
-* [ ] Organización en Github (projects | issues | labels | milestones)
+* [X] Organización en Github (projects | issues | labels | milestones)
 
 ### Firebase
 

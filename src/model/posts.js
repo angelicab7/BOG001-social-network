@@ -67,3 +67,16 @@ export async function likePost(currentUserId, postId, userHasLikedThePost) {
     });
   }
 }
+
+/**
+ * Editar post
+ * @param {string} postId - ID del post
+ * @param {string} message - Mensaje del post
+ */
+export async function editPost(postId, message) {
+  const db = firebase.firestore();
+  const postRef = db.collection('posts').doc(postId);
+  return postRef.update({
+    message,
+  });
+}
