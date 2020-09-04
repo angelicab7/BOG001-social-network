@@ -76,7 +76,7 @@ export async function likePost(currentUserId, postId, userHasLikedThePost) {
 export async function editPost(postId, message) {
   const db = firebase.firestore();
   const postRef = db.collection('posts').doc(postId);
-  return postRef.update({
+  return postRef.update({ //libreria de promesas, consumo
     message,
   });
 }

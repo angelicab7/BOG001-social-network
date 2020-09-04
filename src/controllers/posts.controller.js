@@ -56,7 +56,7 @@ export async function onClickSaveChangesButton(postId, message) {
     onBeforeOpen: () => {
       Swal.showLoading();
     },
-  });
+  }); //creacion de promesas
   try {
     // Se ejecuta el cambio en la base de datos para guardar estos cambios
     await editPost(postId, message);
@@ -74,7 +74,7 @@ export async function onClickSaveChangesButton(postId, message) {
 
 export function postTemplate(userId, userName, userPicture, postMessage, postImage, postId, likes) {
   const currentUserId = firebase.auth().currentUser.uid;
-  const container = document.createElement('div');
+  const container = document.createElement('div');//Se crea un elemento de tipo div, aunque se pueden crear mas elementos del Html
   container.className = 'create-post margin-t-3 margin-b-3';
   container.dataset.user = userId;
   container.dataset.id = postId;
@@ -104,7 +104,7 @@ export function postTemplate(userId, userName, userPicture, postMessage, postIma
             </div>
   `;
 
-  container.innerHTML = template;
+  container.innerHTML = template;//añade html dentro de un elemento
 
   // EDIT AND DELETE POSTS
 
@@ -123,7 +123,7 @@ export function postTemplate(userId, userName, userPicture, postMessage, postIma
       // A este nuevo botón le añadimos una clase para añadir estilos
       publishButton.className = 'save-changes-button posts-button';
       // A este nuevo botón le agregamos un texto
-      publishButton.textContent = 'Publish';
+      publishButton.textContent = 'Publish'; //devuelve el contenido de texto del nodo especificado 
 
       // Seleccionamos el elemento post-edit-actions que contiene el botón edit post
       // Este botón edit post lo reemplazamos por el nuevo botón recién creado usando replaceChild
@@ -183,6 +183,8 @@ export default async () => {
     ${footer}
   
 `;
+
+  //Se le agrega al body el divElement que contiene toda la pagina de posts
   content.appendChild(divElement);
   const postsContainer = document.querySelector('#container-posts');
   const postsFragment = document.createDocumentFragment();

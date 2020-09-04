@@ -118,7 +118,7 @@ Solo necesitas un navegador y dar click en el siguiente link: https://smelly-cat
 
 * [x] Organizar y dividir el código en módulos (Modularización)
 * [x] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [x] Uso de linter (ESLINT)
+* [ ] Uso de linter (ESLINT)
 
 ### Git y Github
 
