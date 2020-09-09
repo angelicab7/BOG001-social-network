@@ -73,7 +73,7 @@ Crear un sitio web agradable, que se adapte a todas las pantallas (Responsive) y
 
 *¿Cómo ejecutar este proyecto?*
 
-Solo necesitas un navegador y dar click en el siguiente link: https://smelly-cat-1e196.firebaseapp.com/#/
+Solo necesitas un navegador y dar click en el siguiente link: https://smelly-cat-1e196.firebaseapp.com/#/  o en https://angelicab7.github.io/BOG001-social-network/
 
 *****************
 ## OBJETIVOS DE APRENDIZAJE
